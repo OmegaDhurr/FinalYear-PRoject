@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--magnific popup css link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+  <!-- font awesome file link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+  <!-- bootstrap file link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
+  
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Architechture And Interior Design Website</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+:root{
+    --orange: #ff7a00;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    font-family: 'Exo 2', sans-serif;
+    
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.heading{
+  font-size: 4rem;
+  text-align: center;
+  color: #444;
+  margin: 2rem 0;
+  padding-top: 6rem;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: var(--orange);
+  text-underline: -1.4rem;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #fff;
+    z-index: 100;
+    padding: 1rem 2rem;
+    box-shadow: 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.header .logo img{
+  height: 4rem;
+}
+
+.header nav ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0% padding 0%;
+}
+
+.header nav ul li{
+  margin: 0 1.5rem;
+}
+
+.header nav ul li a{
+  font-size: 2rem;
+  color: #666;
+}
+
+.header nav ul li a:hover{
+  color: #000;
+  text-decoration: none;
+}
+
+.header .fa-bars{
+  font-size: 2.5rem;
+  color: #666;
+  cursor: pointer;
+  display: none;
+}
+
+.home .hero{
+  min-height: 60vh;
+  background: url(bg2.png) no-repeat;
+  background-size: cover; 
+  background-position: center; 
+  display: flex; 
+  align-items: center;
+}
+
+.home .hero .text1{
+  font-size: 5rem;
+  width: 45rem;
+  background: #fff; 
+  padding: 1rem 2rem;
+  text-align: center; 
+  opacity: .8;
+}
+
+.home .hero .text2{
+  font-size: 3rem;
+  width: 35rem;
+  background: var(--orange); 
+  padding: 1rem 2rem;
+  text-align: center; 
+  opacity: .8;
+  margin-top: 1rem;
+  color: #fff; 
+}
+
+.home .counting{
+   min-height: 40vh;
+   padding: 2rem 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+
+
+.home .counting .box{
+  margin: 2rem 4rem;
+  text-align: center;
+}
+
+.home .counting .box .count{
+  font-size: 7rem;
+  color: #444;
+
+}
+
+.home .counting .box h3{
+ font-size: 2rem;
+ color: var(--orange);
+}
+
+.about{
+  min-height: 100vh;
+  padding-bottom: 3rem;
+}
+
+.about .image{
+  padding: 2rem;
+}
+
+.about .image img{
+  height: 45rem;
+  object-fit: cover;
+  box-shadow: 2.5rem 2.5rem 0 1rem var(--orange);
+}
+
+.about .info{
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.about .info h2{
+  color: var(--orange);
+  font-size: 3rem;
+}
+
+.about .info p{
+  font-size: 1.4rem;
+  color: #444;
+  margin: 2rem 0;
+}
+
+.about .info .icons a{
+  font-size: 2rem;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background: #444;
+  color: #fff;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.about .info .icons a:hover{
+  background: var(--orange);
+}
+
+.service{
+  min-height: 100vh;
+}
+
+.service .box-container{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service .box-container .box{
+  height: 25rem;
+  width: 25rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+  border-left: 0.5rem solid var(--orange);
+  border-right: 0.5rem solid var(--orange);
+  border-radius: 0.5rem;
+  text-align: center;
+  padding-top: 6rem;
+  margin: 2rem 3rem;
+}
+
+.service .box-container .box .fas{
+  color: var(--orange);
+  font-size: 5rem;
+}
+
+
+.service .box-container .box .p{
+  color: #333;
+  font-size: 1.1rem;
+  margin: 2rem 0;
+
+}
+
+.project{
+  min-height: 100vh;
+  background: #333;
+}
+
+.project .heading{
+  color: #fff;
+}
+
+.project .box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project .box-container .box{
+  height: 20rem;
+  width: 30rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.5rem #000;
+  overflow: hidden;
+}
+
+.project .box-container .box img{
+  height: 45vh;
+  width: 45vh;
+  object-fit: cover;
+}
+
+.project .box-container .box img:hover{
+  transform: scale(1.4);
+}
+
+.contact{
+  min-height: 100vh;
+}
+
+.contact-box-container{
+  width: 93%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-box-container .contact-box{
+  height: 15rem;
+  flex: 1 0 30rem;
+  margin: 2rem;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.contact-box-container .contact-box i{
+  color: var(--orange);
+  font-size: 4rem;
+}
+
+.contact-box-container .contact-box h3{
+  font-size: 1.8rem;
+  color: #444;
+  margin: 2rem .0;
+}
+
+
+.contact .form-container{
+  width: 90%;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact .form-container form input, textarea{
+  height: 4.5rem;
+  padding: 0 1rem;
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: none;
+  color: #333;
+}
+
+.contact .form-container form .inputBox{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .form-container form input[type="text"]{
+  width: 49%;
+}
+
+.contact .form-container form input[type="email"]{
+  width: 100%;
+}
+
+.contact .form-container form textarea{
+  width: 100%;
+  height: 20rem;
+  padding: 1rem;
+  resize: none;
+  overflow-y: auto;
+}
+
+.contact .form-container form input[type="submit"]{
+  background: var(--orange);
+  width: 15rem;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.contact .form-container form input[type="submit"]:hover{
+  opacity: 0.8;
+}
+
+.footer{
+  background: #333;
+  text-align: center; 
+}
+
+.footer .row{
+  width: 100%;
+  margin-left: 0;
+  padding: 1rem;
+}
+
+.footer .row .col-md-3{
+  margin: 1rem 0;
+}
+
+.footer h2{
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.footer p{
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.footer .list{
+  display: flex; 
+  flex-flow: column; 
+}
+
+.footer .list a{
+  color: #ccc; 
+  font-size: 1.7rem;
+}
+
+.footer .letter p{
+  font-size: 2rem;
+}
+
+.footer .letter input[type="email"]{
+  outline: none; 
+  border: none; 
+  background: none; 
+  padding: 0 1rem;
+  color: #fff; 
+  height: 2rem;
+  width: 100%;
+  border: 1rem solid #fff; 
+  font-size: 1.5rem;
+}
+
+.footer .letter input[type="submit"]{
+  outline: none; 
+  border: none; 
+  background: #fff; 
+  margin: 1rem 0;
+  width: 10rem;
+  font-size: 1.6rem;
+}
+
+.footer .letter input[type="submit"]:hover{
+  background: var(--orange);
+  color: #fff;
+}
+
+.footer .credit{
+  width: 100%;
+  text-align: center; 
+  color: #fff; 
+  font-size: 2rem;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  margin-bottom: 0;
+  border-radius: 0.1rem solid #aaa; 
+  letter-spacing: 0.2rem;
+}
+
+.footer .credit span{
+  color: var(--orange);
+}
+
+.fa-times{
+  transform: rotate(180deg);
+}
+
+
+
+/* media queries */
+
+@media (max-width:768px) {
+
+  html{
+    font-size: 50%;
+  }
+
+  .header .fa-bars{
+  display: block;
+}
+
+ .header nav{
+   position: fixed;
+   top:6rem;
+   right: -120%;
+   height: calc(100vh - 6rem);
+   width: 100vw;
+   background: rgba(0, 0, 0, 0.5);
+   z-index: 1000;
+   border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+ }
+
+ .header nav ul {
+   height: 100%;
+   width: 33rem;
+   background: #fff;
+   flex-flow: column;
+   justify-content: center;
+   float: right;
+ }
+
+ .header nav ul li {
+   margin:1rem 0;
+ }
+
+ .header nav ul li a{
+   display: block;
+   padding: 0.5rem 0;
+   border: 0.1rem solid rgba(0, 0, 0, 0.3);
+   width: 25rem;
+   border-radius: 5rem;
+   text-align: center;   
+ }
+
+ .header nav ul li a:hover{
+   background: #333;
+   color: #fff;
+ }
+
+ .header .nav-toggle{
+   right: 0%;
+
+ }
+}
+
+@media(max-width:400px){
+ .home .hero .text1{
+   font-size: 3.5rem;
+   width: 35rem;
+
+ }
+
+ .home .hero .text2{
+   font-size: 2.5rem;
+   width: 33rem;
+ }
+
+ 
+} 
+
+</style>
+</head>
+<body>
+
+
+  <!--  section starts  -->
+  <header class="header fixed-top">
+    <a href="#" class="logo"><img src="logo33.jpg" height="100" width="60" alt=""></img></a>
+    <nav>
+      <ul>
+        <li><a href="#home">home</a></li> 
+        <li><a href="#about">about </a></li>
+        <li><a href="#service">service</a></li>
+        <li><a href="#project">project</a></li> 
+        <li><a href="#contact">contact</a></li>
+      </ul>  
+    </nav>
+    <div class="fas fa-bars"></div>
+  </header>
+    
+  <!-- header section ends  -->
+
+
+
+  <!-- home section starts --> 
+  <section id="home" class="home container-fluid p-0"> 
+    <div class="row hero"> 
+     <div class="col pl-5 ml-sm-5 p-0"> 
+      <h1 class="text1">Interior Design</h1> 
+      <h3 class="text2">Architecture Services</h3> 
+     </div> 
+
+    
+    </div>
+   </section> 
+   
+   <!-- home section ends  -->
+
+
+
+   <!--about section starts-->
+      <section id="about" class="about container">
+
+        <h1 class="heading">About Us</h1>
+
+        <div class="row align-items-center">
+        <div class="col-md-6 image">
+          <img src="about us2.jpg" width="90%" alt="">
+        </div>
+
+        <div class="col-md-6 info">
+          <h2>The Best Interior Design in City</h2>
+          <p>MIB Design Studio is a boutique design firm, involved exceptionally qualified designers that work cooperatively to make enlivened and interesting interior conditions. Our wide scope of demographic; private to senior living, property holder to corporate clients, all craving to hoist their spaces and draw in with their surroundings.</p>
+          <p>MIB Design Studio is something other than an interior design organization, we’re an accumulation of specialists and draftsmen with mutual reasoning of underscoring the basic and the sensitive. We control structures and mixes from our regular world to make a stylish, down-to-earth, and practical environment that changes a straightforward building or space into a position of bliss for you and your visitors.
+
+            We have over 10 years of experience universally and are pleased to declare we’re currently serving Central Florida. With the base camp situated in Orlando, our powerhouse group of specialists is prepared to convey their skill to your home or office, explicitly custom fitted to meet your requirements.</p>
+          <div class="icons">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+          </div>
+        </div>
+          
+      
+        </div>
+
+      </section> 
+   <!--about section ends-->
+
+
+
+   <!--service section starts-->
+      
+     <section id="service" class="service">
+
+      <h1 class="heading">Our Services</h1>
+      <div class="box-container mx-auto">
+
+        <div class="box">
+          <div class="fas fa-palette"></div>
+          <p>Furnituress layouts using new and existing furniture.</p>
+        </div>
+
+
+        <div class="box">
+          <div class="fas fa-tools"></div>
+          <p>Custom furniture, cabinet, and millwork design.</p>
+        </div>
+
+
+      <div class="box">
+        <div class="fas fa-house-user"></div>
+        <p>Preconstruction and project management services – (We assist you in communicating interior elements to architects and contractors prior to and during the construction process) 
+Design services for clients with special needs.</p>
+      </div>
+
+
+      <div class="box">
+        <div class="fas fa-bed"></div>
+        <p>Space planning and purchasing.</p>
+      </div>
+
+
+      <div class="box">
+        <div class="fas fa-bath"></div>
+        <p>Kitchen and bathroom design.</p>
+      </div>
+
+     </section>
+    
+   <!--service section ends-->
+
+  
+  
+   <!--project section starts-->
+
+    <section id="project" class="project">
+      <h1 class="heading">Our Projects</h1>
+      <div class="box-container">
+
+        <div class="box">
+          <a href="house.jpg" title="House">
+          <img src="house.jpg" alt="">
+          </a>
+        </div>
+      
+
+        <div class="box">
+          <a href="hall.jpg" title="Hall">
+          <img src="hall.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="box">
+          <a href="pool.jpeg" title="Pool">
+          <img src="pool.jpeg" alt="">
+          </a>
+        </div>
+
+        <div class="box">
+          <a href="kitchen.jpg" title="Kitchen">
+          <img src="kitchen.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="box">
+          <a href="bathroom.jpg" title="Bathroom">
+          <img src="bathroom.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="box">
+          <a href="toilet2.jpg" title="Toilet">
+          <img src="toilet2.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+   <!--project section ends-->
+
+   
+   
+   <!--contact section starts-->
+
+    <section id="contact" class="contact">
+      <h1 class="heading">Contact Us</h1>
+      <div class="contact-box-container mx-auto">
+
+        <div class="contact-box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Thane, India-401107</h3>
+        </div>
+
+
+        <div class="contact-box">
+          <i class="fas fa-envelope"></i>
+          <h3>mibdesignstudios@gmail.com</h3>
+        </div>
+
+        <div class="contact-box">
+          <i class="fas fa-phone"></i>
+          <h3>+917977160165</h3>
+        </div>
+      </div>
+
+      <div class="form-container mx-auto">
+        <form action="">
+
+          <div class="inputBox">
+           <input type="text" placeholder="first name">
+           <input type="text" placeholder="last name">
+          </div>
+          <input type="email" placeholder="email">
+          <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+          <input type="submit" value="send">
+        </form>
+      </div>
+    </section>
+
+   <!--contact section ends-->
+
+  
+  
+   <!-- footer section starts -->
+      
+   <section class="container-fluid footer">
+        
+    <div class="row">
+      
+      <div class="col-md-3">
+          <h2><img src="s" alt=""></h2>
+          <p></p>
+      </div>
+      
+      <div class="col-md-3">
+          <h2>our loaction</h2>
+          <div class="list">
+            <a href="#">india</a>
+            <a href="#">france</a>
+            <a href="#">russia</a>
+            <a href="#">usa</a>
+            <a href="#">japan</a>
+          </div>
+      </div>
+      
+      <div class="col-md-3">
+          <h2>follow us</h2>
+          <div class="list">
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">pinterest</a>
+          </div>
+      </div>
+      
+      <div class="col-md-3 text-center text-md-left">
+        <h2>newsletter</h2>  
+        <p>subscribe for latest updates</p>
+        <input type="email" placeholder="enter your email">
+        <input type="submit" placeholder="subscribe">
+      </div>
+      
+    </div>
+    
+    <h1 class="credit">created by <span>mr.abdulrehman shaikh</span> | all rights reserved. </h1>
+  </section>
+  
+  <!-- footer section ends -->
+
+ 
+  <!-- jquery file link  -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+ 
+  <!--magnific popup link-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  
+
+  <!-- Main/custom Javascript File link -->
+  <script src="js/main.js"></script>
+
+  <script>
+
+  $(document).ready(function(){
+  
+    $('.fa-bars').click(function(){
+      $(this).toggleClass('fa-times');
+      $('nav').toggleClass('nav-toggle');
+    });
+    
+    $(window).on('scroll load',function(){
+      $('.fa-bars').removeClass('fa-times');
+      $('nav').removeClass('nav-toggle');
+    });
+  });
+
+  $('.count').each(function(){
+    var $this = $(this),
+    countTo = $this.attr('data-count');
+    $({ countNum :$this.text() }).animate({
+      countNum : countTo
+    },
+    {
+      duration:5000,
+      step:function(){
+        $this.text(Math.floor(this.countNum))
+      },
+      complete:function(){
+        $this.text(this.countNum + '+');
+      }
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    });g;;
+  });
+
+  $('.project').magnificPopup({
+    delegate:'a',
+    type:'image',
+    gallery:{
+      enabled:true
+    }
+  })
+
+  </script>
+  
+</body>
+</html>
